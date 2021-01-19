@@ -23,9 +23,13 @@ code {
   height: 8vh;
   display: flex;
   justify-content: center;
+  /* This is I have added */
+  background-color: white;
   align-items: center;
   border-bottom: 1px solid rgb(216, 214, 214);
   position: fixed;
+  /* and this also */
+  z-index: 100;
 }
 
 .header__container {
