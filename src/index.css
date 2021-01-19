@@ -1,13 +1,235 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+.header {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(216, 214, 214);
+  position: fixed;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.header__first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__third {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.page {
+  width: 100vw;
+  height: 92vh;
+  margin-top: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.page__container {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+
+.page__suggestions {
+  height: 60%;
+  width: 24%;
+  top: 15%;
+  right: 20%;
+  position: fixed;
+}
+
+.page__suggestions__header__main {
+  height: 20%;
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__suggestions__header {
+  height: 15%;
+  width: 100%;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__suggestions__header__left {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__suggestions__header__logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 100px;
+}
+
+.page__suggestions__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.page__suggestions__header__body__left {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__suggestions__header__body__logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+
+.page__stories {
+  height: 18%;
+  width: 60%;
+  margin-top: 3%;
+  position: relative;
+  border: 1px solid rgb(216, 214, 214);
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page__stories__container {
+  padding: 20px;
+}
+
+.page__stories__logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 100px;
+}
+
+.page__posts {
+  min-height: 73%;
+  width: 60%;
+  margin-top: 3%;
+  position: relative;
+  border: 1px solid rgb(216, 214, 214);
+  border-radius: 5px;
+}
+
+.page__posts__header {
+  height: 13%;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__posts__header__logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+
+.page__posts__header__left {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__posts__header__right {
+  width: "auto";
+}
+
+.page__posts__body {
+  height: 61%;
+  width: 100%;
+  position: relative;
+}
+
+.page__posts__image {
+  height: 40%;
+  width: 100%;
+}
+
+.page__posts__icons {
+  height: 13%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.page__posts__icons__left {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__posts__icons__right {
+  width: auto;
+}
+
+.page__posts__footer {
+  height: 13%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.page__posts__footer__left {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__posts__footer__right {
+  width: auto;
 }
