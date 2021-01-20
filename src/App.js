@@ -182,45 +182,47 @@ function App() {
             </div>
           </div>
           <div className="page__stories">
-            <div className="page__stories__container">
-              <img
-                className="page__stories__logo"
-                src="https://images.pexels.com/photos/1553783/pexels-photo-1553783.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                alt="pix"
-              />
-              <p>ankit.negi_</p>
-            </div>
-            <div className="page__stories__container">
-              <img
-                className="page__stories__logo"
-                src="https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                alt="pix"
-              />
-              <p>sonali_sb</p>
-            </div>
-            <div className="page__stories__container">
-              <img
-                className="page__stories__logo"
-                src="https://images.pexels.com/photos/1321909/pexels-photo-1321909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                alt="pix"
-              />
-              <p>jessica_kr</p>
-            </div>
-            <div className="page__stories__container">
-              <img
-                className="page__stories__logo"
-                src="https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                alt="pix"
-              />
-              <p>ankita.ak</p>
-            </div>
-            <div className="page__stories__container">
-              <img
-                className="page__stories__logo"
-                src="https://images.pexels.com/photos/1192601/pexels-photo-1192601.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                alt="pix"
-              />
-              <p>rohan.roy.</p>
+            <div className="page__stories__main">
+              <div className="page__stories__container">
+                <img
+                  className="page__stories__logo"
+                  src="https://images.pexels.com/photos/1553783/pexels-photo-1553783.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="pix"
+                />
+                <p>ankit.negi_</p>
+              </div>
+              <div className="page__stories__container">
+                <img
+                  className="page__stories__logo"
+                  src="https://images.pexels.com/photos/1319911/pexels-photo-1319911.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="pix"
+                />
+                <p>sonali_sb</p>
+              </div>
+              <div className="page__stories__container">
+                <img
+                  className="page__stories__logo"
+                  src="https://images.pexels.com/photos/1321909/pexels-photo-1321909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="pix"
+                />
+                <p>jessica_kr</p>
+              </div>
+              <div className="page__stories__container">
+                <img
+                  className="page__stories__logo"
+                  src="https://images.pexels.com/photos/1642228/pexels-photo-1642228.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="pix"
+                />
+                <p>ankita.ak</p>
+              </div>
+              <div className="page__stories__container">
+                <img
+                  className="page__stories__logo"
+                  src="https://images.pexels.com/photos/1192601/pexels-photo-1192601.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt="pix"
+                />
+                <p>rohan.roy.</p>
+              </div>
             </div>
           </div>
           <div className="page__posts">

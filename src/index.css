@@ -68,7 +68,8 @@ code {
   width: 60%;
   height: 100%;
   position: relative;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .page__suggestions {
@@ -140,10 +141,22 @@ code {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border: 1px solid green;
+}
+
+.page__stories__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  border: 2px solid black;
 }
 
 .page__stories__container {
-  padding: 20px;
+  padding: 17px;
+  position: relative;
+  border: 1px solid blue;
 }
 
 .page__stories__logo {
