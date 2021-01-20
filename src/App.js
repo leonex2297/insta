@@ -286,6 +286,67 @@ function App() {
               </div>
             </div>
           </div>
+          <div className="page__posts">
+            <div className="page__posts__header">
+              <div className="page__posts__header__left">
+                <img
+                  className="page__posts__header__logo"
+                  src="https://images.unsplash.com/photo-1519764622345-23439dd774f7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Ym95c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="pix"
+                />
+                <p style={{ fontWeight: "bold" }}>leo_nex_</p>
+              </div>
+              <div className="page__posts__header__right">
+                <AiOutlineEllipsis style={{ height: "40px", width: "40px" }} />
+              </div>
+            </div>
+            <div className="page__posts__body">
+              <img
+                className="page__posts__image"
+                src=" https://images.unsplash.com/photo-1523469615101-40c35985fb90?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGJveXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                alt="pix"
+              />
+            </div>
+            <div className="page__posts__icons">
+              <div className="page__posts__icons__left">
+                <LikeSvg />
+                <CommentSvg />
+                <MessageSvg />
+              </div>
+              <div className="page__posts__icons__right">
+                <SavepicSvg />
+              </div>
+            </div>
+            <div className="page__posts__footer">
+              <div className="page__posts__footer__left">
+                <input
+                  type="text"
+                  placeholder="Add a comment..."
+                  style={{
+                    height: "25px",
+                    width: "800px",
+                    outline: "none",
+                    border: "none",
+                    fontSize: "1.2rem",
+                  }}
+                />
+              </div>
+              <div className="page__posts__footer__right">
+                <button
+                  disabled
+                  style={{
+                    color: "aqua",
+                    padding: "0",
+                    border: "none",
+                    background: "none",
+                    outline: "none",
+                  }}
+                >
+                  Post
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
