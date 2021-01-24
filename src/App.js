@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import HomeSvg from "./Svg/HomeSvg";
 import MessageSvg from "./Svg/MessageSvg";
 import CompassSvg from "./Svg/CompassSvg";
@@ -8,6 +8,29 @@ import SavepicSvg from "./Svg/SavepicSvg";
 import { AiOutlineEllipsis } from "react-icons/ai";
 
 function App() {
+  const [ishover, setIsHover] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
+  const hovercontainer = useRef(null);
+  const headerbutton = useRef(null);
+
+  useEffect(() => {
+    const hoverElement = hovercontainer.current;
+    if (ishover) {
+      hoverElement.style.display = "inline";
+    } else {
+      hoverElement.style.display = "none";
+    }
+  }, [ishover]);
+
+  useEffect(() => {
+    const header_button = headerbutton.current;
+    if (isClicked) {
+      header_button.style.display = "inline";
+    } else {
+      header_button.style.display = "none";
+    }
+  }, [isClicked]);
+
   return (
     <div>
       <div className="header">
@@ -226,17 +249,170 @@ function App() {
             </div>
           </div>
           <div className="page__posts">
+            <div
+              className="page__posts__header__right__button"
+              ref={headerbutton}
+            >
+              <div
+                className="page__posts__header__right__button__div"
+                style={{ color: "red" }}
+              >
+                Report
+              </div>
+              <div
+                className="page__posts__header__right__button__div"
+                style={{ color: "red" }}
+              >
+                Unfollow
+              </div>
+              <div className="page__posts__header__right__button__div">
+                Go to post
+              </div>
+              <div
+                className="page__posts__header__right__button__div"
+                onClick={() => setIsClicked(false)}
+              >
+                Cancel
+              </div>
+            </div>
+            <div
+              className="page__posts__image__hover__container"
+              ref={hovercontainer}
+            >
+              <div className="page__posts__image__hover__header">
+                <div className="page__posts__image__hover__header__left">
+                  <img
+                    className="page__posts__header__logo"
+                    src="https://images.unsplash.com/photo-1519764622345-23439dd774f7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Ym95c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt="pix"
+                  />
+                  <div style={{ position: "relative", height: "100%" }}>
+                    <p style={{ fontWeight: "bold", marginLeft: "20px" }}>
+                      leo_nex_
+                    </p>
+                    <h4
+                      style={{
+                        fontWeight: "bold",
+                        color: "gray",
+                        marginLeft: "20px",
+                      }}
+                    >
+                      |Rahul Gaira|
+                    </h4>
+                    <p style={{ fontWeight: "bold", marginLeft: "20px" }}>
+                      Followed by ankit.negi_
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="page__posts__image__hover__body1">
+                <div
+                  style={{
+                    width: "33%",
+                    height: "100%",
+                    backgroundColor: "red",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <h4>198</h4>
+                  <p>Posts</p>
+                </div>
+                <div
+                  style={{
+                    width: "33%",
+                    height: "100%",
+                    backgroundColor: "red",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <h4>8158</h4>
+                  <p>followers</p>
+                </div>
+                <div
+                  style={{
+                    width: "33%",
+                    height: "100%",
+                    backgroundColor: "red",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <h4>123</h4>
+                  <p>Followings</p>
+                </div>
+              </div>
+              <div className="page__posts__image__hover__body">
+                <img
+                  className="page__posts__image__hover__body__images"
+                  src=" https://images.unsplash.com/photo-1523469615101-40c35985fb90?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGJveXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="pix"
+                />
+                <img
+                  className="page__posts__image__hover__body__images"
+                  src=" https://images.unsplash.com/photo-1523469615101-40c35985fb90?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGJveXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="pix"
+                />
+                <img
+                  className="page__posts__image__hover__body__images"
+                  src=" https://images.unsplash.com/photo-1523469615101-40c35985fb90?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGJveXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                  alt="pix"
+                />
+              </div>
+
+              <div className="page__posts__image__hover__footer">
+                <button
+                  style={{
+                    width: "49%",
+                    height: "90%",
+                    outline: "none",
+                    border: "1px solid rgb(216,214,214)",
+                    borderRadius: "5px",
+                  }}
+                >
+                  Message
+                </button>
+                <button
+                  style={{
+                    width: "49%",
+                    height: "90%",
+                    outline: "none",
+                    border: "1px solid rgb(216,214,214)",
+                    borderRadius: "5px",
+                  }}
+                >
+                  Following
+                </button>
+              </div>
+            </div>
+
             <div className="page__posts__header">
               <div className="page__posts__header__left">
                 <img
                   className="page__posts__header__logo"
                   src="https://images.unsplash.com/photo-1519764622345-23439dd774f7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Ym95c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
                   alt="pix"
+                  onMouseOver={() => {
+                    setIsHover(true);
+                  }}
+                  onMouseLeave={() => {
+                    setIsHover(false);
+                  }}
                 />
                 <p style={{ fontWeight: "bold" }}>leo_nex_</p>
               </div>
               <div className="page__posts__header__right">
-                <AiOutlineEllipsis style={{ height: "40px", width: "40px" }} />
+                <AiOutlineEllipsis
+                  style={{ height: "40px", width: "40px" }}
+                  onClick={() => setIsClicked(true)}
+                />
               </div>
             </div>
             <div className="page__posts__body">
@@ -286,6 +462,7 @@ function App() {
               </div>
             </div>
           </div>
+
           <div className="page__posts">
             <div className="page__posts__header">
               <div className="page__posts__header__left">

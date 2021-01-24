@@ -65,6 +65,7 @@ code {
   display: flex;
   justify-content: center;
   align-items: center;
+
   /* position: absolute; */
 }
 
@@ -190,7 +191,7 @@ code {
 .page__posts__header__logo {
   height: 50px;
   width: 50px;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 .page__posts__header__left {
@@ -255,6 +256,95 @@ code {
 
 .page__posts__footer__right {
   width: auto;
+}
+
+.page__posts__image__hover__container {
+  height: 40%;
+  width: 70%;
+  top: 8%;
+  left: 3%;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid rgb(216, 214, 214);
+  border-radius: 15px;
+  /* outline: 2px solid blue; */
+  background-color: white;
+}
+
+.page__posts__image__hover__header {
+  /* background-color: rgb(139, 218, 250); */
+  /* border-radius: 15px; */
+  height: 25%;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__posts__image__hover__header__left {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.page__posts__image__hover__body {
+  height: 35%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__posts__image__hover__footer {
+  height: 20%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.page__posts__image__hover__body1 {
+  height: 20%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__posts__image__hover__body__images {
+  height: 100%;
+  width: 33%;
+}
+
+.page__posts__header__right__button {
+  height: 30%;
+  width: 100%;
+  left: 40%;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  border-radius: 15px;
+  box-shadow: 1px 1px 13px gray;
+}
+
+.page__posts__header__right__button__div {
+  height: 25%;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid rgb(216, 214, 214);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* @media only screen and (max-width: 600px) {
